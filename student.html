@@ -46,9 +46,23 @@
 <div><p>Student Name</p></div>
 <div><p>Student Email</p></div>
 <div><p>Student Contact</p></div>
+
+  
   <% items.forEach(function(item) { %>
             <li><%= item.YOUR_FIELD_NAME %></li>
         <% }); %>
+
+   app.get('/', async (req, res) => {
+  try {
+    const collection = client.db(dbName).collection('YOUR_COLLECTION_NAME');
+    const documents = await collection.find({}).toArray();
+    res.render('index', { items: documents });
+  } catch (err) {
+    console.error(err);
+    res.send("Error fetching data");
+  }
+});
+       
 </section>
 <!-- <section class = "container section1 flex flex-wrap">
 <img class = "itemImg" src="home7.png">
