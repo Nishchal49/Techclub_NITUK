@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"
+		href="contactus.css">
+	<title>Contact us Page</title>
+</head>
+
+<body>
+	<!-- Header section -->
+	<header>
+		<button class="hamburger" id="hamburger-icon">
+			<span onclick="openNavbar()"> ☰</span>
+		</button>
+		<div class="logo"><img src="" alt=""></div>
+		<nav id="nav-menu">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About</a></li>
+			</ul>
+		</nav>
+		<button class="reachUs-button">Call us</button>
+	</header>
+
+	<!-- banner section -->
+	<section class="banner">
+		<img src="https://media.geeksforgeeks.org/wp-content/uploads/20230822131732/images.png"
+			alt="Welcome to our Contact Us page">
+		<h1>Get in Touch With Us</h1>
+		<p>
+		We're here to answer any questions you may have.
+		</p>
+	</section>
+
+	<!-- Contact form -->
+	<section class="contact-form">
+		<div class="form-container">
+			<h2>Your Details</h2>
+			<form action="/createcontact" method="POST">
+
+				<label for="name">Name: </label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email: </label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="phone">Phone: </label>
+				<input type="tel" id="phone" name="phone">
+
+				<label for="message">Message: </label>
+				<textarea id="message" name="message" rows="4" required></textarea>
+
+				<button type="submit" class="submit-button">Submit</button>
+			</form>
+		</div>
+	</section>
+
+	<!-- Company contact info -->
+	<section class="contact-info">
+		<h2>Contact Information</h2>
+		<address>
+			Technical Club NITUK<br>
+			Srinagar<br>
+			Uttarakhand, 246174<br>
+			Phone: <a href="tel:1234567890">192-837-4650</a><br>
+			Email: <a href="mailto:info@example.com">nituk@gmail.com</a>
+		</address>
+	</section>
+
+	<!-- Footer section -->
+	<footer>
+		<p>
+		© 2024 Technical club NITUK. All rights reserved.
+		</p>
+	</footer>
+	<script src="script.js"></script>
+	<div id="google_translate_element"></div>
+
+	<script type="text/javascript">
+	function googleTranslateElementInit() {
+	new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+	}
+	</script>
+
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>
