@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Page</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS for additional styling */
+    body {
+      background-color: #f8f9fa;
+    }
+    .sidebar {
+      background-color: #343a40;
+      color: white;
+    }
+    .content {
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-3 col-lg-2 d-md-block sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              Dashboard <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Database
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Student
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 content">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">ADMIN</h1>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Number of Students</h5>
+              <p class="card-text">66541951</p>
+              <!-- <a href="#" class="btn btn-primary">Select</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Events</h5>
+              <p class="card-text">
+                <ul>
+                    <li>Hackathon</li>
+                    <li>Drone Race</li>
+                    <li>Teslaculation</li>
+                    <li>And many more....</li>
+                </ul>
+              </p>
+              <!-- <a href="#" class="btn btn-primary">Select</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Upcoming Events</h5>
+              <p class="card-text">Coming Soon....</p>
+              <!-- <a href="#" class="btn btn-primary">Select</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
