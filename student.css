@@ -1,0 +1,94 @@
+html, body{
+height: 100%;
+width: 100%;
+margin: 0;
+padding: 0;
+font-family: 'Roboto', sans-serif;
+}
+
+header{
+position: sticky;
+top: 0;
+background-color: white;
+height: 66px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+}
+
+.rightBox{
+display: flex;
+margin: 12px;
+}
+
+.left img{
+width: 32px;
+height: 23px;
+}
+
+.container{
+padding: 0vw 10vw;
+/* margin: 13px 0px; */
+}
+.containerHeader{
+padding: 0vw 10vw;
+/* margin: 13px 0px; */
+}
+
+nav{
+font-size: 12px;
+padding-top: 12px;
+}
+nav ul li{
+list-style: none;
+padding: 0 12px;
+}
+
+.section1{
+background: #f2f2f2;
+/* height: 122vh; */
+}
+.search{
+width: 24vw;
+padding: 7px 17px;
+border: 0.5px solid grey;
+background: #f7f8fd;
+border-radius: 5px;
+}
+.homeImg{
+width: 80vw;
+margin: 12px 0;
+}
+.itemImg{
+width: 12vw;
+margin: 6px 8px;
+}
+
+.tall{
+min-height: 40vh;
+}
+
+/* @media (max-width: 1550px){
+header{
+height: 122px;
+}
+nav{
+flex-direction: column;
+align-items: center;
+}
+.right{
+flex-direction: column;
+display: flex;
+margin: 12px;
+}
+.rightBox{
+display: flex;
+margin: 12px;
+}
+nav ul li{
+list-style: none;
+padding: 0 4px;
+font-size: 12px;
+}
+.containerHeader{
+padding: 0vw 2vw;
+}
+}
